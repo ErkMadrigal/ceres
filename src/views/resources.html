@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include ('partials/links.html') -%>
+    
+    <title><%= title %></title>
+
+</head>
+<body class="resourceBody">
+
+    <%- include ('partials/nav.html') -%>
+
+    <section class="works section-big">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div class="section-title">
+                        <h2><span>News</span> Resources</h2>
+                        <p>The new common language will be more simple and regular than.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <!-- Works filter -->
+                <ul class="work filters">
+                    <li class="filter" data-filter="all">
+                        <span class="icon-presentation"></span> All
+                    </li>
+                    <li class="filter" data-filter=".web">
+                        <span class="icon-browser"></span> Web
+                    </li>
+                    <li class="filter" data-filter=".app">
+                        <span class="icon-mobile"></span> App
+                    </li>
+                    <li class="filter" data-filter=".graphic">
+                        <span class="icon-camera"></span> Graphic
+                    </li>
+                </ul>
+                <!-- / Works filter -->
+            </div>
+
+            <div class="portfolio">
+                <div class="row work-items">
+                    <% for(let i = 0; i <= 2; i++) { %>
+                        <!-- work item -->
+                        <div class="col-md-4 col-sm-6 mix web">
+                            <div class="item">
+                                <a href="img/img1.jpg" class="work-popup">
+                                    <img src="img/img1.jpg" class="images" alt="">
+                                    <div class="overlay">
+                                        <i class="fa fa-arrows-alt" aria-hidden="true"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <h3 class="text-center text-uppercase font-weight-bold textBg">Texto tema</h3>
+                            <p class="text-justify textBg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quod facere voluptatum, expedita omnis doloribus illo ipsam, iure saepe perspiciatis aspernatur reiciendis excepturi officiis, nisi necessitatibus quia culpa adipisci optio cum. Debitis, totam eligendi assumenda voluptatibus consequatur corporis similique inventore. Asperiores saepe sequi accusantium molestiae ipsam quae iste quos consequatur.</p>
+                            <a href="#" class="btn btn-primary btn-block btnGo">Go</a>
+                        </div>
+
+                        <!-- work item -->
+                        <div class="col-md-4 col-sm-6 mix graphic">
+                            <div class="item">
+                                <a href="img/img2.jpg" class="work-popup">
+                                    <img src="img/img2.jpg" class="images" alt="">
+                                    <div class="overlay">
+                                        <i class="fa fa-arrows-alt" aria-hidden="true"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <h3 class="text-center text-uppercase font-weight-bold textBg">Texto tema</h3>
+                            <p class="text-justify textBg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quod facere voluptatum, expedita omnis doloribus illo ipsam, iure saepe perspiciatis aspernatur reiciendis excepturi officiis, nisi necessitatibus quia culpa adipisci optio cum. Debitis, totam eligendi assumenda voluptatibus consequatur corporis similique inventore. Asperiores saepe sequi accusantium molestiae ipsam quae iste quos consequatur.</p>
+                            <a href="#" class="btn btn-primary btn-block btnGo">Go</a>
+                        </div>
+
+                        <!-- work item -->
+                        <div class="col-md-4 col-sm-6 mix typography web">
+                            <div class="item">
+                                <a href="img/img3.jpg" class="work-popup">
+                                    <img src="img/img3.jpg" class="images" alt="">
+                                    <div class="overlay">
+                                        <i class="fa fa-arrows-alt" aria-hidden="true"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <h3 class="text-center text-uppercase font-weight-bold textBg">Texto tema</h3>
+                            <p class="text-justify textBg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quod facere voluptatum, expedita omnis doloribus illo ipsam, iure saepe perspiciatis aspernatur reiciendis excepturi officiis, nisi necessitatibus quia culpa adipisci optio cum. Debitis, totam eligendi assumenda voluptatibus consequatur corporis similique inventore. Asperiores saepe sequi accusantium molestiae ipsam quae iste quos consequatur.</p>
+                            <a href="#" class="btn btn-primary btn-block btnGo">Go</a>
+                        </div>
+
+                        <!-- work item -->
+                        <div class="col-md-4 col-sm-6 mix app web">
+                            <div class="item">
+                                <a href="img/img1.jpg" class="work-popup">
+                                    <img src="img/img1.jpg" class="images" alt="">
+                                    <div class="overlay">
+                                        <i class="fa fa-arrows-alt" aria-hidden="true"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <h3 class="text-center text-uppercase font-weight-bold textBg">Texto tema</h3>
+                            <p class="text-justify textBg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quod facere voluptatum, expedita omnis doloribus illo ipsam, iure saepe perspiciatis aspernatur reiciendis excepturi officiis, nisi necessitatibus quia culpa adipisci optio cum. Debitis, totam eligendi assumenda voluptatibus consequatur corporis similique inventore. Asperiores saepe sequi accusantium molestiae ipsam quae iste quos consequatur.</p>
+                            <a href="#" class="btn btn-primary btn-block btnGo">Go</a>
+                        </div>
+
+                        <!-- work item -->
+                        <div class="col-md-4 col-sm-6 mix app graphic">
+                            <div class="item">
+                                <a href="img/img2.jpg" class="work-popup">
+                                    <img src="img/img2.jpg" class="images" alt="">
+                                    <div class="overlay">
+                                        <i class="fa fa-arrows-alt" aria-hidden="true"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <h3 class="text-center text-uppercase font-weight-bold textBg">Texto tema</h3>
+                            <p class="text-justify textBg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quod facere voluptatum, expedita omnis doloribus illo ipsam, iure saepe perspiciatis aspernatur reiciendis excepturi officiis, nisi necessitatibus quia culpa adipisci optio cum. Debitis, totam eligendi assumenda voluptatibus consequatur corporis similique inventore. Asperiores saepe sequi accusantium molestiae ipsam quae iste quos consequatur.</p>
+                            <a href="#" class="btn btn-primary btn-block btnGo">Go</a>
+                        </div>
+
+                        <!-- work item -->
+                        <div class="col-md-4 col-sm-6 mix app graphic">
+                            <div class="item">
+                                <a href="img/img3.jpg" class="work-popup">
+                                    <img src="img/img3.jpg" class="images" alt="">
+                                    <div class="overlay">
+                                        <i class="fa fa-arrows-alt" aria-hidden="true"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <h3 class="text-center text-uppercase font-weight-bold textBg">Texto tema</h3>
+                            <p class="text-justify textBg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quod facere voluptatum, expedita omnis doloribus illo ipsam, iure saepe perspiciatis aspernatur reiciendis excepturi officiis, nisi necessitatibus quia culpa adipisci optio cum. Debitis, totam eligendi assumenda voluptatibus consequatur corporis similique inventore. Asperiores saepe sequi accusantium molestiae ipsam quae iste quos consequatur.</p>
+                            <a href="#" class="btn btn-primary btn-block btnGo">Go</a>
+                        </div>
+                    <% } %>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <%- include ('partials/footer.html') -%>
+
+    <%- include ('partials/scripts.html') -%>
+
+</body>
+</html>

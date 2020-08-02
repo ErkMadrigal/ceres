@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include ('partials/links.html') -%>
+    
+    <title><%= title %></title>
+
+</head>
+<body class="resourceBody">
+
+    <%- include ('partials/nav.html') -%>
+
+    <section id="contact" class="contact-area section-big">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div class="section-title">
+                        <h2><span>Add</span> Resource</h2>
+                        <p>The new common language will be more simple and regular than.</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="contact-form">
+                        <form class="was-validated">
+                            <div class="form-row">
+                                <div class="col-md-12 mb-5">
+                                    <label for="validationServer01">First name</label>
+                                    <input type="text" class="form-control is-valid" id="validationServer01"
+                                        placeholder="First name" value="Mark" required>
+                                    <div class="valid-feedback">
+                                        Looks good!
+                                    </div>
+                                </div>
+                                <div class="col-md-12 mb-5">
+                                    <label for="validationTextarea">Textarea</label>
+                                    <textarea class="form-control is-invalid" id="validationTextarea"
+                                        placeholder="Required example textarea" required></textarea>
+                                    <div class="invalid-feedback">
+                                        Please enter a message in the textarea.
+                                    </div>
+                                </div>
+                                <div class="actions">
+                                    <button class="btn btn-primary">Add</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <%- include ('partials/footer.html') -%>
+
+    <%- include ('partials/scripts.html') -%>
+
+</body>
+</html>
