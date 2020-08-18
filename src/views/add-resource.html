@@ -6,7 +6,7 @@
     <title><%= title %></title>
 
 </head>
-<body class="resourceBody">
+<body>
 
     <%- include ('partials/nav.html') -%>
 
@@ -28,16 +28,16 @@
                             <div class="form-row">
                                 <div class="col-md-12 mb-5">
                                     <label for="validationServer01">First name</label>
-                                    <input type="text" class="form-control is-valid" id="validationServer01"
-                                        placeholder="First name" value="Mark" required>
-                                    <div class="valid-feedback">
+                                    <input type="text" class="form-control p-2" id="validationServer01"
+                                        placeholder="First name" required style="background: aliceblue;">
+                                    <div class="invalid-feedback">
                                         Looks good!
                                     </div>
                                 </div>
                                 <div class="col-md-12 mb-5">
                                     <label for="validationTextarea">Textarea</label>
-                                    <textarea class="form-control is-invalid" id="validationTextarea"
-                                        placeholder="Required example textarea" required></textarea>
+                                    <textarea class="form-control p-2" id="validationTextarea"
+                                        placeholder="Required example textarea" required style="background: aliceblue;"></textarea>
                                     <div class="invalid-feedback">
                                         Please enter a message in the textarea.
                                     </div>
