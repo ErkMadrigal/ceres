@@ -2,16 +2,16 @@
 const express = require('express');
 const morgan = require('morgan');
 const path = require('path');
-const mongoose = require('mongoose');
+// const mongoose = require('mongoose');
 
 const app = express(); 
 
 //coneting DB
 
-mongoose
-    .connect('mongodb://localhost/resources')
-    .then(db => console.log('db connected'))
-    .catch(err => console.log('type error mongoDB', err));
+// mongoose
+//     .connect('mongodb://localhost/resources')
+//     .then(db => console.log('db connected'))
+//     .catch(err => console.log('type error mongoDB', err));
 
 //settings
 app.set('port', 3000);

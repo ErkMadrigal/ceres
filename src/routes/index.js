@@ -1,18 +1,41 @@
-const express = require('express');
+const express = require("express");
 const router = express.Router();
+const email = require('./email');
 
-const database = require('../models/database');
-
-router.get('/', (req, res) => {
-    res.render('index.html', {title: 'Showkes'});
+const oEmail = new email({
+    'host':'smtp.ethereal.email',
+    'port': 587,
+    'secure': false,
+    auth:{
+        user: 'quinten.mann@ethereal.email',
+        pass: 'a3r2vF8v4VqpGtq3jQ'
+    }
 });
 
-router.get('/add-resource', (req, res) => {
-    res.render('add-resource.html', {title: 'add-resource | page'})
+
+// const database = require('../models/database');
+
+router.get("/", (req, res) => {
+  res.render("index.html", { title: "viciones" });
 });
 
-router.get('/resources', (req, res) => {
-    res.render('resources.html', {title: 'resources | page'})
+router.get("/gallery", (req, res) => {
+  res.render("gallery.html", { title: "gallery" });
+});
+
+router.post("/email", (req, res) => {
+
+    const data = req.body;
+    console.log(data)
+
+    let email ={
+        from: data.email,
+        to:"quinten.mann@ethereal.email",
+        subject: data.name,
+        html: data.message
+    }
+    oEmail.enviarCorreo(email);
+    res.redirect("/#contact")
 });
 
 module.exports = router;

@@ -371,7 +371,6 @@ img {
 * -------------------------------------------------------------------------------------- */
 
 .slider-area {
-    background-image: url(../img/bg/intro-bg.jpg);
     background-size: cover;
     background-position: center;
     position: relative;

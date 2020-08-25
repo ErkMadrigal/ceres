@@ -108,7 +108,7 @@
 
       $(function() {
           element.typed({
-              strings: ["Erk Mad Fl", "Creative Web Developer"],
+              strings: ["CÉRES", "Banda de Dark pop"],
               typeSpeed: 80,
               loop: true,
           });

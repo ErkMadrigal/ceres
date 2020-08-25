@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include ('partials/links.html') -%>
+    
+    <title>Céres | <%= title %></title>
+
+</head>
+<body>
+
+    <%- include ('partials/nav.html') -%>
+
+    <section class="works section-big">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div class="section-title">
+                        <h2><span>News</span> Photos and Videos</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <!-- Works filter -->
+                <ul class="work filters">
+                    <li class="filter" data-filter="all">
+                        <span class="icon-presentation"></span> All
+                    </li>
+                    <li class="filter" data-filter=".web">
+                        <span class="icon-browser"></span> Web
+                    </li>
+                    <li class="filter" data-filter=".events">
+                        <span class="icon-mic"></span> Events
+                    </li>
+                    <li class="filter" data-filter=".graphic">
+                        <span class="icon-camera"></span> Graphic
+                    </li>
+                </ul>
+                <!-- / Works filter -->
+            </div>
+
+            <div class="portfolio">
+                <div class="row work-items">
+                    <!-- work item -->
+                    <div class="col-md-4 col-sm-6 mix web">
+                        <div class="item">
+                            <a href="img/testi/visiones.jpg" class="work-popup">
+                                <img src="img/testi/visiones.jpg" class="images" alt="">
+                                <div class="overlay">
+                                    <i class="fa fa-arrows-alt" aria-hidden="true"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <h3 class="text-center text-uppercase font-weight-bold text-secondary">Céres - Visiones</h3>
+                        <a href="https://www.youtube.com/watch?v=6Np7BUmqt-Q" target="_blank" class="btn btn-primary btn-block btnGo">Go</a>
+                    </div>
+
+                    <!-- work item -->
+                    <div class="col-md-4 col-sm-6 mix web">
+                        <div class="item">
+                            <a href="img/testi/resguardo.jpg" class="work-popup">
+                                <img src="img/testi/resguardo.jpg" class="images" alt="">
+                                <div class="overlay">
+                                    <i class="fa fa-arrows-alt" aria-hidden="true"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <h3 class="text-center text-uppercase font-weight-bold text-secondary">Céres - Resguardo</h3>
+                        <a href="https://www.youtube.com/watch?v=yZndi-80d6w" target="_blank" class="btn btn-primary btn-block btnGo">Go</a>
+                    </div>
+
+                    <!-- work item -->
+                    <div class="col-md-4 col-sm-6 mix graphic">
+                        <div class="item">
+                            <a href="img/testi/grabacion.jpg" class="work-popup">
+                                <img src="img/testi/grabacion.jpg" class="images" alt="">
+                                <div class="overlay">
+                                    <i class="fa fa-arrows-alt" aria-hidden="true"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <h3 class="text-center text-uppercase font-weight-bold text-secondary">Céres - Grabación</h3>
+                        <a href="https://www.youtube.com/watch?v=fq3tPAMBth8" target="_blank" class="btn btn-primary btn-block btnGo">Go</a>
+                    </div>
+
+                    
+                    <!-- work item -->
+                    <div class="col-md-4 col-sm-6 mix events">
+                        <div class="item">
+                            <a href="img/testi/eventos (1).jpeg" class="work-popup">
+                                <img src="img/testi/eventos (1).jpeg" class="images" alt="">
+                                <div class="overlay">
+                                    <i class="fa fa-arrows-alt" aria-hidden="true"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <h3 class="text-center text-uppercase font-weight-bold text-secondary">Farmacos (chile)</h3>
+                        <p>Céres a abierto shows de talla internacional como Farmacos (chile)</p>
+                    </div>
+
+                    <!-- work item -->
+                    <div class="col-md-4 col-sm-6 mix events">
+                        <div class="item">
+                            <a href="img/testi/eventos (2).jpeg" class="work-popup">
+                                <img src="img/testi/eventos (2).jpeg" class="images" alt="">
+                                <div class="overlay">
+                                    <i class="fa fa-arrows-alt" aria-hidden="true"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <h3 class="text-center text-uppercase font-weight-bold text-secondary">Centavrvs (Mexico)</h3>
+                        <p>Céres a abierto shows de talla internacional como Centavrvs (Mexico)</p>
+                        <a href="https://www.youtube.com/watch?v=fq3tPAMBth8" target="_blank" class="btn btn-primary btn-block btnGo">Go</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <%- include ('partials/footer.html') -%>
+
+    <%- include ('partials/scripts.html') -%>
+
+</body>
+</html>
