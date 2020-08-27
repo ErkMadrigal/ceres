@@ -16,7 +16,7 @@ const oEmail = new email({
 // const database = require('../models/database');
 
 router.get("/", (req, res) => {
-  res.render("index.html", { title: "viciones" });
+  res.render("index.html", { title: "inicio" });
 });
 
 router.get("/gallery", (req, res) => {
